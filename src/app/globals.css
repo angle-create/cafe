@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-cream text-primary font-sans;
+  }
+
+  h1 {
+    @apply text-h1 font-display font-bold;
+  }
+
+  h2 {
+    @apply text-h2 font-display font-bold;
+  }
+
+  h3 {
+    @apply text-h3 font-display font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded transition-all duration-300 font-medium;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-light-brown;
+  }
+
+  .btn-secondary {
+    @apply btn border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+
+  .container {
+    @apply max-w-container mx-auto px-4;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
